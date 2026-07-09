@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CGU MEC STUDIO｜機械系學生接案團隊</title>
+<meta name="description" content="CGU MEC STUDIO 是由機械工程系學生組成的接案團隊，提供 3D 建模、機電整合、模擬分析與原型製作等專業服務。" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14.5 6 L19 5 L18 9.5 L22 12 L18 14.5 L19 19 L14.5 18 L12 22 L9.5 18 L5 19 L6 14.5 L2 12 L6 9.5 L5 5 L9.5 6 Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.4"/></svg>
+      </span>
+      <span class="logo-text">CGU MEC<span class="logo-accent">STUDIO</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services" class="nav-link">服務項目</a>
+      <a href="#work" class="nav-link">作品案例</a>
+      <a href="#process" class="nav-link">合作流程</a>
+      <a href="#team" class="nav-link">團隊成員</a>
+      <a href="#contact" class="nav-link nav-cta">開始洽詢</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-blueprint" aria-hidden="true">
+      <svg viewBox="0 0 600 600" fill="none">
+        <circle cx="300" cy="300" r="220" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="300" cy="300" r="160" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="300" cy="300" r="90" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="300" y1="10" x2="300" y2="590" stroke="currentColor" stroke-width="0.4"/>
+        <line x1="10" y1="300" x2="590" y2="300" stroke="currentColor" stroke-width="0.4"/>
+        <path d="M300 80 L318 130 L370 118 L358 170 L410 190 L358 210 L370 262 L318 250 L300 300" stroke="currentColor" stroke-width="0.8"/>
+      </svg>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">機械工程系學生接案團隊</p>
+      <h1 class="hero-title reveal" style="transition-delay:.08s">
+        把工程圖紙上的想法，<br />
+        做成<span class="hero-title-accent">看得見、動得了</span>的實物。
+      </h1>
+      <p class="hero-sub reveal" style="transition-delay:.16s">
+        我們是一群橫跨機構設計、控制系統與模擬分析的機械系學生，
+        提供從概念設計、3D 建模到原型製作的完整接案服務。
+      </p>
+      <div class="hero-actions reveal" style="transition-delay:.24s">
+        <a href="#contact" class="btn btn-primary">開始洽詢專案</a>
+        <a href="#work" class="btn btn-ghost">查看作品案例</a>
+      </div>
+
+      <dl class="hero-stats reveal" style="transition-delay:.32s">
+        <div class="stat">
+          <dt class="stat-num" data-count="0">0</dt>
+          <dd class="stat-label">完成專案</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-num" data-count="0">0</dt>
+          <dd class="stat-label">合作系所 / 廠商</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-num" data-count="6">0</dt>
+          <dd class="stat-label">核心成員</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-num" data-count="98" data-suffix="%">0</dt>
+          <dd class="stat-label">準時交付率</dd>
+        </div>
+      </dl>
+    </div>
+
+    <a href="#services" class="scroll-cue" aria-label="向下捲動">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>SOLIDWORKS</span><span>·</span><span>FUSION 360</span><span>·</span>
+      <span>ANSYS</span><span>·</span><span>MATLAB</span><span>·</span>
+      <span>ARDUINO</span><span>·</span><span>PLC</span><span>·</span>
+      <span>3D PRINTING</span><span>·</span><span>CNC</span><span>·</span>
+      <span>SOLIDWORKS</span><span>·</span><span>FUSION 360</span><span>·</span>
+      <span>ANSYS</span><span>·</span><span>MATLAB</span><span>·</span>
+      <span>ARDUINO</span><span>·</span><span>PLC</span><span>·</span>
+      <span>3D PRINTING</span><span>·</span><span>CNC</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="section-tag reveal">SERVICES</p>
+      <h2 class="section-title reveal">四個專長領域，<br/>涵蓋一個機構專案的完整流程</h2>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 16.5v-9L12 3l9 4.5v9L12 21l-9-4.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 7.5 12 12l9-4.5M12 12v9" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="service-index">01</span>
+          <h3>3D 建模與工程圖繪製</h3>
+          <p>使用 SolidWorks／Fusion 360 進行零件設計、組裝結構與公差配置，產出符合加工規範的工程圖與 BOM 表。</p>
+          <ul class="service-tags">
+            <li>零件設計</li><li>組裝圖</li><li>工程圖紙</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal" style="transition-delay:.06s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="7" y="7" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <span class="service-index">02</span>
+          <h3>機電整合與自動化</h3>
+          <p>感測器與控制器整合、PLC 邏輯設計、小型自動化裝置與機器人開發，串起機構與電控的最後一哩路。</p>
+          <ul class="service-tags">
+            <li>PLC 控制</li><li>感測整合</li><li>自動化裝置</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal" style="transition-delay:.12s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="service-index">03</span>
+          <h3>模擬分析與數據處理</h3>
+          <p>MATLAB／ANSYS 結構與流體模擬、實驗數據整理與統計分析，並協助整理成清楚易懂的報告與圖表。</p>
+          <ul class="service-tags">
+            <li>結構模擬</li><li>數據分析</li><li>報告撰寫</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal" style="transition-delay:.18s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 21 7.5v9L12 22 3 16.5v-9L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 12 21 7.5M12 12 3 7.5M12 12v10" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="service-index">04</span>
+          <h3>3D 列印與原型製作</h3>
+          <p>從樹脂到 PLA 的多種列印工藝，快速製作小型零件與功能原型，協助驗證設計並縮短開發週期。</p>
+          <ul class="service-tags">
+            <li>原型製作</li><li>零件列印</li><li>設計驗證</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section-alt" id="work">
+    <div class="container">
+      <p class="section-tag reveal">SELECTED WORK</p>
+      <h2 class="section-title reveal">近期作品案例</h2>
+
+      <div class="work-grid">
+        <article class="work-card reveal">
+          <div class="work-thumb work-thumb--1">
+            <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="1"/><circle cx="100" cy="100" r="45" stroke="currentColor" stroke-width="1"/><path d="M100 30v20M100 150v20M30 100h20M150 100h20" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">機構設計</span>
+            <h3>自動料件分揀機構</h3>
+            <p>為系上專題設計的小型分揀機構，整合光學感測與伺服機構，分揀準確率達 96%。</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal" style="transition-delay:.06s">
+          <div class="work-thumb work-thumb--2">
+            <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="40" y="40" width="120" height="120" stroke="currentColor" stroke-width="1"/><path d="M40 100h120M100 40v120" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">模擬分析</span>
+            <h3>無人機機臂結構優化</h3>
+            <p>使用 ANSYS 進行拓樸優化與應力模擬，機臂減重 23% 同時維持原有強度。</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal" style="transition-delay:.12s">
+          <div class="work-thumb work-thumb--3">
+            <svg viewBox="0 0 200 200" aria-hidden="true"><path d="M100 30 165 70v60l-65 40-65-40V70Z" stroke="currentColor" stroke-width="1"/><path d="M100 30v140M35 70l65 40 65-40" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">自動化整合</span>
+            <h3>桌上型循線機器人套件</h3>
+            <p>為社課設計的教學用循線機器人，含開源韌體與課程講義，已授權給 3 個系學會使用。</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal" style="transition-delay:.18s">
+          <div class="work-thumb work-thumb--4">
+            <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="55" stroke="currentColor" stroke-width="1"/><path d="M100 45v-15M100 155v15M45 100h-15M155 100h15M63 63l-11-11M137 63l11-11M63 137l-11 11M137 137l11 11" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">原型製作</span>
+            <h3>義肢手部關節原型</h3>
+            <p>與生醫工程團隊合作，以樹脂列印製作三代關節原型，協助驗證握力與活動範圍。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <p class="section-tag reveal">HOW WE WORK</p>
+      <h2 class="section-title reveal">合作流程</h2>
+
+      <ol class="process-list">
+        <li class="process-item reveal">
+          <span class="process-num">01</span>
+          <div>
+            <h3>需求諮詢</h3>
+            <p>透過表單或社群了解專案背景、時程與預算，初步評估可行性。</p>
+          </div>
+        </li>
+        <li class="process-item reveal" style="transition-delay:.06s">
+          <span class="process-num">02</span>
+          <div>
+            <h3>報價與規劃</h3>
+            <p>依專案複雜度提供報價單與時程規劃，確認後簽署合作備忘。</p>
+          </div>
+        </li>
+        <li class="process-item reveal" style="transition-delay:.12s">
+          <span class="process-num">03</span>
+          <div>
+            <h3>設計與製作</h3>
+            <p>依階段回報進度與草稿，重要節點皆與客戶確認方向再繼續。</p>
+          </div>
+        </li>
+        <li class="process-item reveal" style="transition-delay:.18s">
+          <span class="process-num">04</span>
+          <div>
+            <h3>交付與後續支援</h3>
+            <p>提供完整檔案與說明文件，並於交付後提供一段時間的免費調整。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-alt" id="team">
+    <div class="container">
+      <p class="section-tag reveal">THE TEAM</p>
+      <h2 class="section-title reveal">團隊成員</h2>
+      <p class="section-desc reveal">來自機械工程系不同專長的學生組成，各自負責專案中的一塊拼圖。</p>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="team-avatar" style="--avatar-a:#1f2937;--avatar-b:#3a4a63;">陳</div>
+          <h3>陳○宇</h3>
+          <p class="team-role">機構設計 / 專案統籌</p>
+          <p class="team-desc">主修機構設計與精密機械，負責專案規劃與 SolidWorks 建模。</p>
+        </article>
+        <article class="team-card reveal" style="transition-delay:.06s">
+          <div class="team-avatar" style="--avatar-a:#233; --avatar-b:#3d5a5a;">林</div>
+          <h3>林○安</h3>
+          <p class="team-role">控制系統 / 自動化</p>
+          <p class="team-desc">專長嵌入式系統與 PLC 控制，負責感測整合與韌體開發。</p>
+        </article>
+        <article class="team-card reveal" style="transition-delay:.12s">
+          <div class="team-avatar" style="--avatar-a:#3a2f1f;--avatar-b:#5a4a2f;">王</div>
+          <h3>王○哲</h3>
+          <p class="team-role">模擬分析</p>
+          <p class="team-desc">熟悉 ANSYS 與 MATLAB，負責結構模擬與實驗數據處理。</p>
+        </article>
+        <article class="team-card reveal" style="transition-delay:.18s">
+          <div class="team-avatar" style="--avatar-a:#2f1f3a;--avatar-b:#4a2f5a;">黃</div>
+          <h3>黃○庭</h3>
+          <p class="team-role">原型製作</p>
+          <p class="team-desc">負責 3D 列印排版與後製，也處理小型零件的加工試作。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <p class="section-tag reveal">FEEDBACK</p>
+      <h2 class="section-title reveal">合作夥伴怎麼說</h2>
+
+      <div class="quote-grid">
+        <blockquote class="quote-card reveal">
+          <p>「從建模到交付都很有效率，工程圖標註也很清楚，幫我們省下不少溝通成本。」</p>
+          <footer>— 系上專題指導教授</footer>
+        </blockquote>
+        <blockquote class="quote-card reveal" style="transition-delay:.06s">
+          <p>「原本以為找學生團隊會不放心，結果比外包廠商還細心，還會主動提醒設計上的風險。」</p>
+          <footer>— 校內新創團隊創辦人</footer>
+        </blockquote>
+        <blockquote class="quote-card reveal" style="transition-delay:.12s">
+          <p>「模擬報告做得很扎實，圖表清楚到可以直接放進論文附錄。」</p>
+          <footer>— 研究所學長姐</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2 class="section-title">聊聊你的專案</h2>
+        <p class="section-desc">
+          不論是系上專題、新創原型還是課程作業，
+          都歡迎先告訴我們需求，我們會在 1–2 個工作天內回覆。
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@cgumecstudio.tw">hello@cgumecstudio.tw</a>
+          </li>
+          <li>
+            <span class="contact-label">Instagram</span>
+            <a href="#" target="_blank" rel="noopener">@cgumecstudio</a>
+          </li>
+          <li>
+            <span class="contact-label">LINE 官方帳號</span>
+            <a href="#" target="_blank" rel="noopener">@cgumecstudio</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" style="transition-delay:.08s" novalidate>
+        <div class="form-row">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" placeholder="你的稱呼" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="service">需求類型</label>
+          <select id="service" name="service">
+            <option value="modeling">3D 建模與工程圖</option>
+            <option value="automation">機電整合與自動化</option>
+            <option value="simulation">模擬分析與數據處理</option>
+            <option value="prototype">3D 列印與原型製作</option>
+            <option value="other">其他 / 尚未確定</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">專案內容</label>
+          <textarea id="message" name="message" rows="4" placeholder="簡單描述你的需求、時程與預算範圍" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">送出需求</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">CGU MEC<span class="logo-accent">STUDIO</span></span>
+      <p>機械工程系學生接案團隊<br/>讓專業的機構設計，也能被準時交付。</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>網站導覽</h4>
+      <a href="#services">服務項目</a>
+      <a href="#work">作品案例</a>
+      <a href="#process">合作流程</a>
+      <a href="#team">團隊成員</a>
+      <a href="#contact">開始洽詢</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>聯絡方式</h4>
+      <a href="mailto:hello@cgumecstudio.tw">hello@cgumecstudio.tw</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">LINE 官方帳號</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> CGU MEC STUDIO. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="回到頂部">↑</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
