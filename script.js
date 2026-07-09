@@ -96,7 +96,7 @@ contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   if (!contactForm.checkValidity()) {
-    setFormNote('請確認姓名、Email 與專案內容都已填寫。', '#ff8a8a');
+    setFormNote(t('form.note.invalid'), '#ff8a8a');
     contactForm.reportValidity();
     return;
   }
@@ -110,7 +110,7 @@ contactForm.addEventListener('submit', async (e) => {
   };
 
   submitBtn.disabled = true;
-  setFormNote('送出中…', 'rgba(255,255,255,.6)');
+  setFormNote(t('form.note.sending'), 'rgba(255,255,255,.6)');
 
   try {
     const res = await fetch(CONTACT_ENDPOINT, {
@@ -121,13 +121,13 @@ contactForm.addEventListener('submit', async (e) => {
     const data = await res.json().catch(() => ({}));
 
     if (!res.ok || !data.ok) {
-      throw new Error(data.error || '送出失敗');
+      throw new Error(data.error || 'submit failed');
     }
 
-    setFormNote(`謝謝 ${payload.name}！我們已收到你的需求，會盡快透過 Email 與你聯繫。`, '#86e0b0');
+    setFormNote(t('form.note.success').replace('{name}', payload.name), '#86e0b0');
     contactForm.reset();
   } catch (err) {
-    setFormNote('送出失敗，請稍後再試，或直接寄信到 hello@cgumecstudio.tw。', '#ff8a8a');
+    setFormNote(t('form.note.error'), '#ff8a8a');
   } finally {
     submitBtn.disabled = false;
   }

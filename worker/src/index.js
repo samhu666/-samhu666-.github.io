@@ -72,7 +72,7 @@ export default {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: `CGU MEC STUDIO 網站表單 <${env.CONTACT_FROM_EMAIL}>`,
+        from: `FS MEC STUDIO 網站表單 <${env.CONTACT_FROM_EMAIL}>`,
         to: env.CONTACT_TO_EMAIL,
         reply_to: email,
         subject: `[網站洽詢] ${name} - ${serviceLabel}`,
