@@ -1,0 +1,8 @@
+name = "cgu-mec-studio-contact-form"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+CONTACT_TO_EMAIL = "xiageemail@gmail.com"
+CONTACT_FROM_EMAIL = "onboarding@resend.dev"
+ALLOWED_ORIGIN = "https://samhu666.github.io"
